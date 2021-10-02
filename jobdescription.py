@@ -1,5 +1,5 @@
 from datetime import datetime;
-from models.locationaddress import LocationAddress;
+from locationaddress import LocationAddress;
 
 class CleaningJobDescription(object):
 

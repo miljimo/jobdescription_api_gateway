@@ -2,7 +2,7 @@
     @Descriptions
 """
 
-from models.address import Address;
+from address import Address;
 
 
 class LocationAddress(Address):

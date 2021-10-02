@@ -1,4 +1,3 @@
-
 """
   @Description
     The base address object of an address.
