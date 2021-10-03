@@ -1,5 +1,5 @@
 import unittest
-from procedure import Procedure
+from postgres_service_gateway.connectors.procedure import Procedure
 
 
 class ProcedureTest(unittest.TestCase):

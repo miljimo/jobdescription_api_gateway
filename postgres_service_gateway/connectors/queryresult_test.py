@@ -1,5 +1,5 @@
 import unittest
-from queryresult import QueryResult
+from postgres_service_gateway.connectors.queryresult import QueryResult
 
 
 class QueryResultTest(unittest.TestCase):

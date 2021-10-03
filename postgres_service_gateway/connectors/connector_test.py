@@ -1,9 +1,9 @@
 import unittest
 import os
 import sys
-from connector    import PostgresConnector, Option
-from queryresult  import QueryResult
-from procedure    import Procedure;
+from postgres_service_gateway.connectors.connector    import PostgresConnector, Option
+from postgres_service_gateway.connectors.queryresult  import QueryResult
+from postgres_service_gateway.connectors.procedure    import Procedure;
 
 
 class ConnectorTest(unittest.TestCase):

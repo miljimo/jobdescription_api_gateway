@@ -1,9 +1,9 @@
 from flask import request;
-from connector import Option
-from service   import Service;
-from procedure import Procedure;
-import helper;
-import logger;
+from postgres_service_gateway.connectors.connector import Option
+from postgres_service_gateway.connectors.service   import Service;
+from postgres_service_gateway.connectors.procedure import Procedure;
+import postgres_service_gateway.helper as helper;
+import postgres_service_gateway.logger as logger;
 
 VERSION     = 1
 __DB_OPTION = helper.load_postgres_database_settings(helper.DEFAULT_POSTGRES_DATABASE_FILE);

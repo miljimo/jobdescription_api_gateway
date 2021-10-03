@@ -1,6 +1,6 @@
 import psycopg2
-from queryresult import QueryResult;
-from procedure   import Procedure
+from postgres_service_gateway.connectors.queryresult import QueryResult;
+from postgres_service_gateway.connectors.procedure   import Procedure
 
 
 class Option(object):
@@ -131,8 +131,3 @@ class PostgresConnector(object):
         for col in columns:
             names.append(col.name.capitalize())
         return names;
-
-        
-        
-    
-
