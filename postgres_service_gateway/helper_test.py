@@ -1,5 +1,5 @@
 import unittest
-import helper;
+import postgres_service_gateway.helper as helper;
 import json;
 
 

@@ -1,8 +1,8 @@
 import unittest
-from queryresult import QueryResult;
-from service import Service;
-from connector import Option
-from procedure import Procedure
+from postgres_service_gateway.connectors.queryresult import QueryResult;
+from postgres_service_gateway.connectors.service import Service;
+from postgres_service_gateway.connectors.connector import Option
+from postgres_service_gateway.connectors.procedure import Procedure
 
 
 class TestService(unittest.TestCase):

@@ -1,8 +1,5 @@
-from flask import Flask , request
-import os;
-import json
-from flask import Flask;
-import controllers;
+from flask import Flask
+import postgres_service_gateway.controllers as controllers;
 
 
 class HttpServer(Flask):
