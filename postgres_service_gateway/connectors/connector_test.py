@@ -4,6 +4,7 @@ import sys
 from postgres_service_gateway.connectors.connector    import PostgresConnector, Option
 from postgres_service_gateway.connectors.queryresult  import QueryResult
 from postgres_service_gateway.connectors.procedure    import Procedure;
+from helpers.environment import Environment
 
 
 class ConnectorTest(unittest.TestCase):
@@ -13,11 +14,13 @@ class ConnectorTest(unittest.TestCase):
         self.__dbConn = None;
 
     def setUp(self) -> None:
-        Rolename = "testuser"
-        Password = "testpassword"
-        Host     = "localhost"
-        Port     = 5432
-        DBName   = "testdb"
+        Rolename = Environment.get("DB_USERNAME","testuser")
+        Password = Environment.get("DB_PASSWORD","testpassword")
+        Host     = Environment.get("DB_HOST_ADDRESS","localhost")
+        Port     = Environment.get("DB_PORT",5432)
+        DBName   = Environment.get("DB_NAME","testdb")
+        
+
         option   = Option(dbname=DBName,
                         rolename= Rolename,
                         host = Host,
@@ -41,11 +44,12 @@ class ConnectorTest(unittest.TestCase):
         return super().tearDown()   
 
     def test_PostgresConnected(self):
-        Rolename = "testuser"
-        Password = "testpassword"
-        Host     = "localhost"
-        Port     = 5432
-        DBName   = "testdb"
+        Rolename = Environment.get("DB_USERNAME","testuser")
+        Password = Environment.get("DB_PASSWORD","testpassword")
+        Host     = Environment.get("DB_HOST_ADDRESS","localhost")
+        Port     = Environment.get("DB_PORT",5432)
+        DBName   = Environment.get("DB_NAME","testdb")
+        
         option   = Option(dbname=DBName,
                         rolename= Rolename,
                         host = Host,

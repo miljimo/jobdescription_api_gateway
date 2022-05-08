@@ -2,7 +2,13 @@
 
 export PORT=8082
 ## DATABASE CONFIGURATIONS
+export DB_HOST_ADDRESS=localhost
 export DATABASE_NAME=teletruckDEV
-export DATABASE_USER_NAME=teletruck
-export DATABASE_USER_PASSWORD=teletruck
+export DB_USERNAME=teletruck
+export DB_PASSWORD=teletruck
+export DB_PORT=5432
+export DB_NAME=testdb
 
+
+ 
+        
