@@ -1,5 +1,5 @@
 
-FROM python:3.9
+FROM python:3.9  AS teletruck_python39
 WORKDIR /usr/src/teletruck
 
 LABEL  AUTHOR="Obaro I. Johnson"
