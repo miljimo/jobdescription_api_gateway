@@ -1,0 +1,8 @@
+#!/usr/bin/bash
+
+export PORT=8082
+## DATABASE CONFIGURATIONS
+export DATABASE_NAME=teletruckDEV
+export DATABASE_USER_NAME=teletruck
+export DATABASE_USER_PASSWORD=teletruck
+

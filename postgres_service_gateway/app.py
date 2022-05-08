@@ -1,5 +1,9 @@
 from flask import Flask
+from helpers.environment import Environment
 import postgres_service_gateway.controllers as controllers;
+
+
+        
 
 
 class HttpServer(Flask):
@@ -14,6 +18,8 @@ class HttpServer(Flask):
         if(char != '/'):
             route +='/'
             super().add_url_rule(route,view_func=func, methods=methods);
+
+    
             
 app      =  HttpServer(__name__)
 app.handle_func("/",controllers.IndexController);
@@ -21,9 +27,9 @@ app.handle_func("/api/v{0}/dataaccess/proc".format(controllers.VERSION), control
 
 
 
-
 if __name__ =="__main__":
-    app.run();
+    port = Environment.get("PORT", 8080)
+    app.run(port=port)
 
 
 
