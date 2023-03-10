@@ -1,3 +1,5 @@
+import typing
+
 from flask import request;
 from dataaccess.connectors.connector import Option
 from dataaccess.connectors.service   import Service;

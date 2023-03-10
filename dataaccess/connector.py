@@ -1,53 +1,8 @@
 import psycopg2
 from dataaccess.connectors.queryresult import QueryResult;
 from dataaccess.connectors.procedure   import Procedure
+from dataaccess.connectors.option import Option
 
-
-class Option(object):
-
-    def __init__(self, host:str,
-                 port:int,
-                 dbname:str,
-                 rolename:str,
-                 password :str):
-        self.__host      = host;
-        self.__port      = port;
-        self.__dbname    = dbname;
-        self.__rolename  = rolename;
-        self.__password  = password;
-
-    @property
-    def host(self):
-        return self.__host;
-
-    @property
-    def port(self):
-        return self.__port;
-
-    @property
-    def dbname(self):
-        return self.__dbname;
-
-    @property
-    def rolename(self):
-        return self.__rolename;
-
-    @property
-    def password(self):
-        return self.__password;
-
-    def __repr__(self):
-        data = dict();
-        data['rolename'] = self.rolename;
-        data['password'] = self.password;
-        data['dbname'] = self.dbname;
-        data['port'] =self.port;
-        data['hostname']=self.host;
-        return data;
-
-    def __str__(self):
-        return str(self.__repr__())
-    
                 
 class PostgresConnector(object):
 

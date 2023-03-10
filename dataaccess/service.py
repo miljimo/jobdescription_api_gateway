@@ -1,6 +1,6 @@
-from dataaccess.connectors.connector   import PostgresConnector, Option;
-from dataaccess.connectors.procedure   import Procedure
-from dataaccess.connectors.queryresult import QueryResult
+from dataaccess.connector   import PostgresConnector, Option;
+from dataaccess.procedure   import Procedure
+from dataaccess.queryresult import QueryResult
 
 
 class Service(object):
