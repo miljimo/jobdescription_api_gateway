@@ -1,3 +1,4 @@
+# App requirement needed to run the application in the development phrase.
 click==8.0.1
 Flask==2.0.1
 itsdangerous==2.0.1

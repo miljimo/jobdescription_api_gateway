@@ -1,7 +1,7 @@
 import os;
-from postgres_service_gateway.connectors.procedure    import Procedure;
+from dataaccess.connectors.procedure    import Procedure;
 from configparser import ConfigParser;
-from postgres_service_gateway.connectors.connector    import Option;
+from dataaccess.connectors.connector    import Option;
 
 POSTGRES_SETTING_SECTION       ="POSTGRES_DATABASE_DEFAULT";
 DEFAULT_POSTGRES_DATABASE_FILE ="settings.ini"

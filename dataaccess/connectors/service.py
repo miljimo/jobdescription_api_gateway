@@ -1,6 +1,6 @@
-from postgres_service_gateway.connectors.connector   import PostgresConnector, Option;
-from postgres_service_gateway.connectors.procedure   import Procedure
-from postgres_service_gateway.connectors.queryresult import QueryResult
+from dataaccess.connectors.connector   import PostgresConnector, Option;
+from dataaccess.connectors.procedure   import Procedure
+from dataaccess.connectors.queryresult import QueryResult
 
 
 class Service(object):

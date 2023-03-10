@@ -1,6 +1,6 @@
 import psycopg2
-from postgres_service_gateway.connectors.queryresult import QueryResult;
-from postgres_service_gateway.connectors.procedure   import Procedure
+from dataaccess.connectors.queryresult import QueryResult;
+from dataaccess.connectors.procedure   import Procedure
 
 
 class Option(object):

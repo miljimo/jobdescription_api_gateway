@@ -2,14 +2,10 @@ from flask import Flask
 from helpers.environment import Environment
 import postgres_service_gateway.controllers as controllers;
 
-
-        
-
-
 class HttpServer(Flask):
 
-    def __init__(self, appname:str):
-        super().__init__(appname);
+    def __init__(self, app_name:str):
+        super().__init__(app_name:str);
 
     def handle_func(self, route:str, func:callable, methods:list = ['GET','POST']):        
         super().add_url_rule(route,view_func=func, methods=methods);
